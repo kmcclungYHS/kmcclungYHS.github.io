@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="calculator.js"></script>
+<head>
+<meta name="AP Scorer" content="width=device-width, initial-scale=1" charset="UTF-8">
+<style>
+input.boxes{
+	font-size:18pt;
+  outline:none;
+  border:hidden;
+  background: none;
+}
+.container {
+  position: relative;
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+}
+.section_1_in {
+  position: absolute;
+  top: 28.16%;
+  left: 18.25%;
+}
+.section_1_out {
+  position: absolute;
+  top: 28.16%;
+  left: 50.25%;
+}
+.section_2_1_in {
+  position: absolute;
+  top: 44.4%;
+  left: 18.25%;
+}
+.section_2_1_out {
+  position: absolute;
+  top: 44.4%;
+  left: 50.25%;
+}
+.section_2_2_in {
+  position: absolute;
+  top: 52.71%;
+  left: 18.25%;
+}
+.section_2_2_out {
+  position: absolute;
+  top: 52.71%;
+  left: 50.25%;
+}
+.section_2_3_in {
+  position: absolute;
+  top: 61.12%;
+  left: 18.25%;
+}
+.section_2_3_out {
+  position: absolute;
+  top: 61.12%;
+  left: 50.25%;
+}
+.sum {
+  position: absolute;
+  top: 69.3%;
+  left: 50.25%;
+}
+.weighted_s_1_score {
+  position: absolute;
+  top: 83.54%;
+  left: 12.3%;
+}
+.weighted_s_2_score {
+  position: absolute;
+  top: 83.54%;
+  left: 29.90%;
+}
+.composite_score {
+  position: absolute;
+  top: 83.54%;
+  left: 52.5%;
+}
+</style>
+	
+</head>
+<body>
+<div class="container"> 
+  <img src="images/ap_lang_score_guide.png" alt="score_guide" style="width:100%;">
+  <div class="section_1_in"><input type="text"  id="section 1 in" class="boxes" onkeyup="update()"/></div>
+  <div class="section_2_1_in"><input type="text"  id="section 2.1 in" class="boxes" onkeyup="update()"/></div>
+  <div class="section_2_2_in"><input type="text" class="boxes" onkeyup="update()" id="section 2.2 in"/></div>
+  <div class="section_2_3_in"><input type="text" class="boxes" onkeyup="update()" id="section 2.3 in"/></div>
+  <div class="section_1_out"><input type="text" class="boxes" id="section 1 out"/></div>
+  <div class="section_2_1_out"><input type="text" class="boxes" id="section 2.1 out"/></div>
+  <div class="section_2_2_out"><input type="text" class="boxes" id="section 2.2 out"/></div>
+  <div class="section_2_3_out"><input type="text" class="boxes" id="section 2.3 out"/></div>
+  <div class="weighted_s_1_score"><input type="text" class="boxes" id="weight 1"/></div>
+  <div class="weighted_s_2_score"><input type="text" class="boxes" id="weight 2"/></div>
+  <div class="composite_score"><input type="text" class="boxes" id="composite score"/></div>
+  <div class="sum"><input type="text" class="boxes" id="sum"/></div> 	
+</div>
+
+</body>
+</html> 
+
