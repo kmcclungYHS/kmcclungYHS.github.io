@@ -18,7 +18,7 @@ function update(){
     section_2_1_input = parseInt(document.getElementById("section 2.1 in").value);
     section_2_2_input = parseInt(document.getElementById("section 2.2 in").value);
     section_2_3_input = parseInt(document.getElementById("section 2.3 in").value);
-    if (isNaN(section_1_input || section_1_input > 45 || section_1_input < 0)){
+    if (isNaN(section_1_input) || section_1_input > 45 || section_1_input < 0){
         section_1_out = 0;
     }
     else {
@@ -30,13 +30,13 @@ function update(){
     else {
         section_2_1_out = section_2_1_input * 3.0555;
     }
-    if (isNaN(section_2_2_input || section_2_2_input > 6 || section_2_2_input < 0)){
+    if (isNaN(section_2_2_input) || section_2_2_input > 6 || section_2_2_input < 0){
         section_2_2_out = 0;
     }
     else {
         section_2_2_out = section_2_2_input * 3.0555;
     }
-    if (isNaN(section_2_3_input || section_2_3_input > 6 || section_2_3_input < 0)) {
+    if (isNaN(section_2_3_input) || section_2_3_input > 6 || section_2_3_input < 0) {
         section_2_3_out = 0;
     }
     else {
